@@ -101,6 +101,11 @@ section{padding-block:72px}
 .job ul b{font-weight:600}
 .roles{display:flex;flex-direction:column;gap:2px;margin-top:6px;font-size:14.5px;color:var(--muted)}
 @media (max-width:700px){.job{grid-template-columns:1fr;gap:6px}}
+.recog{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px;margin-top:16px}
+.recog>div{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--paper)}
+.recog h3{font-size:16px;margin-bottom:8px}
+.recog ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:15px}
+@media (max-width:640px){.recog{grid-template-columns:1fr}}
 .edu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:40px}
 .edu div{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--paper)}
 .edu h3{font-size:18px;margin-top:6px}
@@ -183,7 +188,7 @@ footer a{color:var(--muted)}
         <div>
           <span class="label">Product Manager</span>
           <h1>I find the messy process, then <em>ship the product that fixes it</em>.</h1>
-          <p class="lede">Former Barclays software engineer. At Icestasy, an ice cream brand, I pitched and shipped the ordering, production and HR products the company now runs on. Currently doing an MSc in Finance.</p>
+          <p class="lede">Former Barclays software engineer and investment banking intern. At Icestasy, an ice cream brand, I pitched and shipped the ordering, production and HR products the company now runs on. Currently doing an MSc in Finance at SIMSREE, Mumbai.</p>
           <span class="avail"><i></i>Available now · internship or full-time · Mumbai or remote</span>
           <div class="cta">
             <a class="btn" href="#work">See my work</a>
@@ -243,11 +248,24 @@ footer a{color:var(--muted)}
           <div class="when">Jun 2026 – now</div>
           <div>
             <h3>Management Intern</h3>
-            <p class="org">Icestasy · ice cream brand selling to cafés, hotels, retailers and distributors</p>
+            <p class="org">Icestasy Projects · Mumbai · ice cream brand selling to cafés, hotels, retailers and distributors</p>
             <ul>
               <li>Pitched and shipped <b>Order Desk</b>: an AI parser turns WhatsApp messages into structured orders. It now handles <b>70–100 orders a day</b> and cut logging time from <b>10–15 minutes to under 2</b>.</li>
               <li>Built <b>production tracking</b> linked to sales orders, calculating weekly ingredient needs from six weeks of order history. Stock-outs and wastage went down.</li>
-              <li>Rolled out an <b>HR system</b> for all 18 employees: attendance, automated leave balances and approvals.</li>
+              <li>Rolled out an <b>HR system</b> for attendance, automated leave balances and approvals.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job">
+          <div class="when">Apr 2026 – Jun 2026<small>Mumbai</small></div>
+          <div>
+            <h3>Summer Intern, Investment Banking</h3>
+            <p class="org">SHC Growth Partners</p>
+            <ul>
+              <li>Built integrated <b>DCF and financial models</b> with scenario and sensitivity analysis to support live deal decisions.</li>
+              <li>Managed virtual data rooms and coordinated stakeholders across teams to keep deals on schedule.</li>
+              <li>Identified <b>cross-border M&amp;A</b> opportunities through market research and buyer identification.</li>
+              <li>Built a <b>bulk outreach tool</b> that sends personalised investor emails one by one, and designed a <b>rules engine and investor-matching system</b> with a 7-stage deal pipeline to take one advisor from <b>5 to 50 deals</b>.</li>
             </ul>
           </div>
         </article>
@@ -258,7 +276,8 @@ footer a{color:var(--muted)}
             <div class="roles"><span>Software Engineer (BA4) · Mar 2025 – Sep 2025</span><span>Graduate Analyst (BA3) · Jun 2023 – Feb 2025</span></div>
             <ul>
               <li>Promoted to BA4 within 20 months.</li>
-              <li>Built storage alerting that cut <b>response time by 48%</b>, then observability with anomaly detection that cut <b>downtime by 30%</b>.</li>
+              <li>Led stakeholder engagement for an innovation initiative that drew <b>300+ project submissions</b>.</li>
+              <li>Built storage alerting that cut <b>response time by 48%</b>, then observability with anomaly detection that cut <b>downtime by 30%</b>. Automated <b>60%+ of remediation workflows</b>.</li>
               <li>Automated production storage data handling: <b>30 hours a week</b> of manual work saved, <b>data accuracy up 38%</b>.</li>
               <li>Led a team of 4 through <b>4–5 data centre recoveries</b>, coordinating several infrastructure teams.</li>
             </ul>
@@ -276,8 +295,19 @@ footer a{color:var(--muted)}
         </article>
       </div>
       <div class="edu" aria-label="Education">
-        <div><span class="label">In progress · until Apr 2027</span><h3>MSc Finance</h3><p>Studying alongside my role at Icestasy.</p></div>
-        <div><span class="label">2019 – 2023</span><h3>B.E. Computer Engineering</h3><p>University of Mumbai (FCRIT) · CGPA 9.22</p></div>
+        <div><span class="label">2025 – 2027</span><h3>MSc Finance</h3><p>SIMSREE, Mumbai (Dr. Homi Bhabha State University) · CGPA 9.46</p></div>
+        <div><span class="label">2019 – 2023</span><h3>B.E. Computer Engineering</h3><p>FCRIT, Navi Mumbai (University of Mumbai) · CGPA 9.22</p></div>
+      </div>
+      <div class="recog" aria-label="Recognition and certifications">
+        <div><h3>Recognition</h3><ul>
+          <li><b>1st runner-up</b>, Finvesto'25 Equity Research Competition (SIMSREE), 200+ teams</li>
+          <li><b>2nd runner-up</b>, Yukti'25 Case Competition (IIM Nagpur), 640+ teams</li>
+          <li><b>Judge</b>, Hackathon KODE Finale (ATLAS SkillTech University), top 24 of 400+ teams</li>
+        </ul></div>
+        <div><h3>Certifications</h3><ul>
+          <li>Data-Driven Product Management (LinkedIn)</li>
+          <li>Lean Six Sigma Green Belt (KPMG)</li>
+        </ul></div>
       </div>
     </div>
   </section>
@@ -306,7 +336,7 @@ footer a{color:var(--muted)}
             <summary>Read the case study</summary>
             <div class="full"><dl>
               <dt>Problem</dt><dd>Orders from cafés, hotels, retailers and distributors in six regions arrived as WhatsApp messages. Salespeople re-typed each one, which took 10–15 minutes, and production had no live view of demand. Stock planning was guesswork.</dd>
-              <dt>Users</dt><dd>15–20 salespeople and six regional heads; kitchen and factory staff; all 18 employees for HR.</dd>
+              <dt>Users</dt><dd>15–20 salespeople and six regional heads; kitchen and factory staff; office and factory staff for HR.</dd>
               <dt>My role</dt><dd>Noticed the problem, pitched the fix to the owner, wrote the specs, built the products with AI coding tools, rolled them out and trained the team.</dd>
               <dt>Decisions</dt><dd><ul>
                 <li><b>Kept WhatsApp as the starting point.</b> Clients didn't have to change anything. Salespeople paste the message and an AI parser builds the order.</li>
@@ -316,6 +346,26 @@ footer a{color:var(--muted)}
               </ul></dd>
               <dt>What shipped</dt><dd><b>Order Desk:</b> orders, pricing by city for six regions, GST invoices, a dashboard and seven reports. <b>Ops:</b> receiving, mixing, filling and dispatch, with live stock and alerts. <b>HRMS:</b> attendance, leave and approvals.</dd>
               <dt>Next time</dt><dd>I'd agree on success measures before launch. Time saved per order was measured clearly; the drop in stock-outs was tracked only informally.</dd>
+            </dl></div>
+          </details>
+        </article>
+
+        <article class="case">
+          <div class="case-body">
+            <div class="kicker"><span class="label">SHC · Investment banking</span><span>Designed · built</span></div>
+            <h3>Letting one advisor handle 10x the deals</h3>
+            <p class="sum">A rules engine, investor matching and a 7-stage deal pipeline, plus a tool for personalised investor outreach.</p>
+            <div class="res">
+              <div><span class="n">5 → 50</span><span class="c">deals one advisor can handle</span></div>
+              <div><span class="n">7</span><span class="c">stages in the deal pipeline</span></div>
+            </div>
+          </div>
+          <details>
+            <summary>Read the case study</summary>
+            <div class="full"><dl>
+              <dt>Problem</dt><dd>Matching each deal to the right investors and keeping outreach personal was manual work, which capped how many deals one advisor could run.</dd>
+              <dt>What I did</dt><dd>Designed a rules engine that encodes the compliance rules, so routine decisions are automatic. Built an algorithm that matches investors to deals, and a 7-stage pipeline to track every deal. Built a Chrome extension that sends personalised emails one at a time through the firm's email, with duplicate checks and pacing to avoid spam limits.</dd>
+              <dt>Decisions</dt><dd>Kept every email individual instead of a mass mailing, so investors get a personal note and replies stay credible.</dd>
             </dl></div>
           </details>
         </article>
@@ -380,24 +430,7 @@ footer a{color:var(--muted)}
           </details>
         </article>
 
-        <article class="case">
-          <div class="case-body">
-            <div class="kicker"><span class="label">Zedex · Internship</span><span>Built</span></div>
-            <h3>Faster performance reporting for a content team</h3>
-            <p class="sum">A system to track the performance of a 10–15 person SEO and content team, with charts for managers.</p>
-            <div class="res">
-              <div><span class="n">60%</span><span class="c">faster reporting</span></div>
-              <div><span class="n">10–15</span><span class="c">people using it</span></div>
-            </div>
-          </div>
-          <details>
-            <summary>Read the case study</summary>
-            <div class="full"><dl>
-              <dt>Problem</dt><dd>Tracking employee performance was manual and slow.</dd>
-              <dt>My role</dt><dd>Planned and built it, including the database design and the APIs behind the charts.</dd>
-            </dl></div>
-          </details>
-        </article>
+        
       </div>
 
       <div class="principles" aria-label="How I work">
@@ -419,7 +452,7 @@ footer a{color:var(--muted)}
         <div><h3>Product</h3><div class="chips"><span>Customer discovery</span><span>Specs &amp; PRDs</span><span>Prioritisation</span><span>Roadmaps</span><span>Rollout &amp; training</span><span>Stakeholders</span><span>Agile</span></div></div>
         <div><h3>Data</h3><div class="chips"><span>SQL</span><span>Python</span><span>Power BI</span><span>Excel</span><span>Dashboards</span></div></div>
         <div><h3>Building</h3><div class="chips"><span>Next.js</span><span>Flask</span><span>Supabase</span><span>PostgreSQL</span><span>LLM features</span><span>Git &amp; CI/CD</span></div></div>
-        <div><h3>Business &amp; finance</h3><div class="chips"><span>MSc Finance</span><span>Pricing</span><span>GST invoicing</span><span>Risk management</span><span>Vendor management</span></div></div>
+        <div><h3>Business &amp; finance</h3><div class="chips"><span>Financial modelling (DCF)</span><span>M&amp;A research</span><span>Pricing</span><span>Risk management</span><span>Lean Six Sigma</span></div></div>
       </div>
     </div>
   </section>
