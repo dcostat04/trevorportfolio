@@ -76,13 +76,22 @@ nav a:hover{color:var(--accent)}
 .principles h3{font-size:20px;font-weight:700}
 .principles p{color:var(--muted);font-size:16px}
 @media (max-width:640px){.principles{grid-template-columns:1fr}}
-.about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:start}
-.about p+p{margin-top:14px}
-.photo{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:18px}
-.timeline{display:flex;flex-direction:column;gap:14px;font-size:15px}
-.timeline div{display:flex;flex-direction:column;border-left:2px solid var(--line);padding-left:14px}
-.timeline .yr{font-family:var(--mono);font-size:12px;color:var(--muted)}
-@media (max-width:700px){.about{grid-template-columns:1fr}}
+.intro{display:flex;align-items:center;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.photo{width:104px;height:104px;border-radius:50%;object-fit:cover;flex:none;border:3px solid var(--paper);box-shadow:0 0 0 1px var(--line)}
+.intro h2{font-size:clamp(28px,4.5vw,38px);font-weight:700}
+.intro p{color:var(--muted);margin-top:6px}
+.about{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;align-items:start}
+.about-text p+p{margin-top:14px}
+.cv{display:flex;flex-direction:column;gap:26px}
+.cv h3{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.cv ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.cv li{display:flex;flex-direction:column;gap:1px;padding:12px 0;border-top:1px solid var(--line)}
+.cv .role{font-weight:600}
+.cv .org{color:var(--muted);font-size:15px}
+.cv .yr{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+@media (max-width:760px){.about{grid-template-columns:1fr;gap:32px}}
+.avail{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--mint)}
+.avail::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mint)}
 .skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 40px}
 .skills div{border-top:1px solid var(--line);padding-top:12px}
 .skills h3{font-size:17px;margin-bottom:6px}
@@ -114,7 +123,7 @@ footer{font-size:13px;color:var(--muted)}
   <section class="hero" aria-labelledby="hero-title">
     <span class="label">Product Manager · Engineer · MSc Finance</span>
     <h1 id="hero-title">I find the messy process, then <em>ship the product that fixes it</em>.</h1>
-    <p class="lede">I spent over two years as a software engineer at Barclays in Pune. Now, as a Management Intern at Icestasy, an ice cream brand, I pitched and shipped the three products the company runs on: ordering, production and HR. I'm finishing an MSc in Finance (April 2027) and looking for product manager roles.</p>
+    <p class="lede">I spent over two years as a software engineer at Barclays in Pune. Now, as a Management Intern at Icestasy, an ice cream brand, I pitched and shipped the three products the company runs on: ordering, production and HR. I'm doing an MSc in Finance (until April 2027) and I can start now in a product manager role: internship, full-time, or an internship that turns into full-time.</p>
     <div class="tags" aria-label="Focus areas">
       <span class="tag">0→1 internal products</span>
       <span class="tag">B2B ordering &amp; supply chain</span>
@@ -122,6 +131,7 @@ footer{font-size:13px;color:var(--muted)}
       <span class="tag">SQL &amp; analytics</span>
       <span class="tag">Stakeholder management</span>
     </div>
+    <span class="avail">Available now · Mumbai or remote</span>
     <div class="cta">
       <a class="btn" href="#work">See my work</a>
       <a class="btn ghost" href="https://www.linkedin.com/in/trevordco/" target="_blank" rel="noopener">LinkedIn</a>
@@ -256,24 +266,37 @@ footer{font-size:13px;color:var(--muted)}
   </section>
 
   <section id="about" aria-labelledby="about-title">
-    <div class="sec-head">
-      <span class="label">About</span>
-      <h2 id="about-title">Hi, I'm Trevor.</h2>
+    <div class="intro">
+      <img class="photo" src="images/trevor-480.jpg" alt="Trevor D'Costa" width="104" height="104">
+      <div>
+        <span class="label">About</span>
+        <h2 id="about-title">Hi, I'm Trevor.</h2>
+        <p>Computer engineer, product builder, MSc Finance student. Based in Mumbai.</p>
+      </div>
     </div>
     <div class="about">
-      <div>
-        <img class="photo" src="images/trevor-480.jpg" alt="Trevor D'Costa" width="120" height="120">
-        <p>I'm a computer engineer who has always ended up doing the product side of the work: working out what people actually need, deciding what to build first, and getting different teams to deliver it. At Barclays that meant monitoring, automation and leading recovery work. At Icestasy it meant pitching and building the systems the whole company now uses.</p>
-        <p>I'm finishing an MSc in Finance in April 2027 and looking for a product manager role where engineering, business operations and finance come together. B2B commerce, supply chain and fintech interest me most.</p>
+      <div class="about-text">
+        <p>I'm a computer engineer who keeps ending up on the product side of the work: working out what people actually need, deciding what to build first, and getting different teams to deliver it. At Barclays that meant monitoring, automation and leading recovery work. At Icestasy it meant pitching and building the systems the whole company now uses.</p>
+        <p>I'm completing an MSc in Finance (April 2027) and I can start now. I'm looking for a product manager role where engineering, business operations and finance come together. B2B commerce, supply chain and fintech interest me most.</p>
         <p>Outside work: I'm from Goa, so football is a given. I also like trying new cafés, reading history and business strategy, and planning the next trip.</p>
       </div>
-      <div class="timeline" aria-label="Career timeline">
-        <div><span class="yr">Jun 2026 – now</span><span>Management Intern, Icestasy</span></div>
-        <div><span class="yr">Until Apr 2027</span><span>MSc Finance</span></div>
-        <div><span class="yr">Mar 2025 – Sep 2025</span><span>Software Engineer (BA4), Barclays</span></div>
-        <div><span class="yr">Jun 2023 – Feb 2025</span><span>Graduate Analyst (BA3), Barclays</span></div>
-        <div><span class="yr">Jun 2022 – Mar 2023</span><span>Full Stack Developer Intern, Zedex Info</span></div>
-        <div><span class="yr">2019 – 2023</span><span>B.E. Computer Engineering, University of Mumbai (FCRIT) · CGPA 9.22</span></div>
+      <div class="cv">
+        <div>
+          <h3>Experience</h3>
+          <ol>
+            <li><span class="role">Management Intern</span><span class="org">Icestasy</span><span class="yr">Jun 2026 – now</span></li>
+            <li><span class="role">Software Engineer (BA4)</span><span class="org">Barclays, Pune</span><span class="yr">Mar 2025 – Sep 2025</span></li>
+            <li><span class="role">Graduate Analyst (BA3)</span><span class="org">Barclays, Pune</span><span class="yr">Jun 2023 – Feb 2025</span></li>
+            <li><span class="role">Full Stack Developer Intern</span><span class="org">Zedex Info, Mumbai</span><span class="yr">Jun 2022 – Mar 2023</span></li>
+          </ol>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <ol>
+            <li><span class="role">MSc Finance</span><span class="org">In progress</span><span class="yr">Until Apr 2027</span></li>
+            <li><span class="role">B.E. Computer Engineering</span><span class="org">University of Mumbai (FCRIT) · CGPA 9.22</span><span class="yr">2019 – 2023</span></li>
+          </ol>
+        </div>
       </div>
     </div>
   </section>
@@ -293,7 +316,7 @@ footer{font-size:13px;color:var(--muted)}
 
   <section id="contact" class="contact" aria-labelledby="contact-title">
     <h2 id="contact-title">Hiring a product manager?</h2>
-    <p>I'm looking for PM and Associate PM roles from May 2027, and I'm happy to talk now. B2B commerce, supply chain and fintech teams especially.</p>
+    <p>I'm available now for PM and Associate PM roles: internship, full-time, or internship to full-time. B2B commerce, supply chain and fintech teams especially.</p>
     <div class="row">
       <code id="email">tardcosta4@gmail.com</code>
       <button id="copy" type="button">Copy email</button>
