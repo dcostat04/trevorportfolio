@@ -3,502 +3,324 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trevor D'Costa · Product Manager</title>
-<meta name="description" content="Trevor D'Costa: former Barclays software engineer who pitched and shipped the ordering, production and HR products Icestasy runs on. Available now for product manager roles.">
+<title>Trevor D'Costa</title>
+<meta name="description" content="Trevor D'Costa builds the systems a business runs on. Product Management Intern at Icestasy, formerly a software engineer at Barclays and an investment banking intern at SHC Growth Partners.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
 <style>
-/* Layout: sticky nav; hero with photo; then About, Experience, Work (expandable case cards), Skills, Contact. One accent, quiet neutrals. */
+/* Layout: 12-column grid, section names hang in the left margin, prose on the right. Rules, not cards. One cobalt accent. */
 :root{
-  --bg:#f6f7f9; --paper:#ffffff; --ink:#141c33; --muted:#59627a; --faint:#8a92a6; --line:#e1e4eb;
-  --accent:#b8325a; --accent-soft:#f7e6ec; --good:#2f7d6b; --good-soft:#e3f1ec;
-  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
-  --body:"Instrument Sans","Helvetica Neue",system-ui,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
-  --nav-h:64px;
+  --paper:#ffffff;
+  --ink:#121419;
+  --soft:#4f5563;
+  --faint:#8b909c;
+  --rule:#e3e5ea;
+  --cobalt:#2340c9;
+  --cobalt-wash:#eef1fd;
+  --sans:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
 }
 @media (prefers-color-scheme: dark){:root{
-  --bg:#0f1320; --paper:#161b2a; --ink:#e9ecf3; --muted:#a1a9bc; --faint:#737c92; --line:#272e42;
-  --accent:#ee7397; --accent-soft:#36202b; --good:#7fcab7; --good-soft:#17302a; color-scheme:dark}}
+  --paper:#0f1115; --ink:#eceef2; --soft:#a7adba; --faint:#7b818e; --rule:#252a34;
+  --cobalt:#8fa2ff; --cobalt-wash:#171d35; color-scheme:dark}}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px)}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
-h1,h2,h3{font-family:var(--display);line-height:1.12;text-wrap:balance;margin:0}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cobalt);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:24px;padding-right:24px}
 p{margin:0}
-a{color:var(--accent);text-underline-offset:3px}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-.container{max-width:1040px;margin:0 auto;padding-left:20px;padding-right:20px}
-.label{font-family:var(--mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
-.btn{display:inline-flex;align-items:center;gap:8px;font:600 15px var(--body);text-decoration:none;border-radius:10px;padding:11px 18px;background:var(--accent);color:#fff;border:0;cursor:pointer}
-.btn:hover{filter:brightness(1.07)}
-.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
-.btn.ghost:hover{border-color:var(--ink)}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
 
-/* nav */
-.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
-.nav.scrolled{border-bottom-color:var(--line)}
-.nav .container{height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-family:var(--display);font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;white-space:nowrap}
-.links{display:flex;gap:4px;align-items:center}
-.links a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:500;padding:8px 12px;border-radius:8px}
-.links a:hover{color:var(--ink)}
-.links a.active{color:var(--ink);background:var(--paper);box-shadow:0 0 0 1px var(--line)}
-.links .btn{padding:8px 14px;margin-left:6px;font-size:14px;color:#fff}
-.links .btn:hover{color:#fff}
-@media (max-width:820px){.links a:not(.btn){display:none}}
+/* top bar */
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding-block:22px;border-bottom:1px solid var(--ink)}
+.top .me{font-weight:800;text-decoration:none;font-size:17px}
+.top nav{display:flex;gap:22px;flex-wrap:wrap;font-size:15px}
+.top nav a{text-decoration:none;color:var(--soft)}
+.top nav a:hover{color:var(--cobalt)}
+@media (max-width:560px){.top{flex-direction:column;gap:10px}.top nav{gap:16px;font-size:14px}}
 
-/* sections */
-section{padding-block:72px}
-.sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:36px;max-width:640px}
-.sec-head h2{font-size:clamp(28px,4.2vw,40px);font-weight:700;letter-spacing:-.01em}
-.sec-head p{color:var(--muted)}
-.alt{background:var(--paper);border-block:1px solid var(--line)}
+/* grid helpers */
+.row{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+.side{grid-column:1 / span 3}
+.main{grid-column:4 / span 9;min-width:0}
+@media (max-width:820px){.row{display:block}.side{margin-bottom:14px}}
+section{padding-block:64px;border-bottom:1px solid var(--rule)}
+.side h2{font-size:15px;font-weight:700;letter-spacing:0;position:sticky;top:24px}
+.side h2 span{display:block;color:var(--faint);font-weight:500;margin-top:2px}
 
 /* hero */
-.hero{padding-block:56px 40px}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:56px;align-items:center}
-.hero h1{font-size:clamp(38px,6vw,64px);font-weight:800;letter-spacing:-.025em;margin-top:14px}
-.hero h1 em{font-style:normal;color:var(--accent)}
-.hero .lede{font-size:clamp(18px,2.2vw,20px);color:var(--muted);max-width:56ch;margin-top:20px}
-.avail{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-size:14.5px;font-weight:600;color:var(--good);background:var(--good-soft);padding:7px 14px;border-radius:999px}
-.avail i{width:8px;height:8px;border-radius:50%;background:var(--good);flex:none}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.portrait{position:relative;justify-self:end;width:100%;max-width:340px;margin:0}
-.portrait img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:24px;display:block;background:var(--line)}
-.portrait figcaption{position:absolute;left:16px;right:16px;bottom:16px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:14px;line-height:1.4;box-shadow:0 8px 24px rgba(20,28,51,.12)}
-.portrait figcaption b{display:block;font-size:15px}
-.portrait figcaption span{color:var(--muted)}
-@media (max-width:760px){.hero-grid{grid-template-columns:1fr;gap:36px}.portrait{justify-self:start;max-width:300px}}
+.hero{padding-block:56px 64px;border-bottom:1px solid var(--rule)}
+.hero .row{align-items:end}
+.hero-text{grid-column:1 / span 8}
+.hero-photo{grid-column:9 / span 4;margin:0}
+.hero h1{font-size:clamp(56px,10vw,128px);line-height:.88;font-weight:900;letter-spacing:-.045em}
+.hero h1 .last{color:var(--cobalt)}
+.claim{font-family:var(--serif);font-size:clamp(22px,2.8vw,30px);line-height:1.3;margin-top:28px;max-width:30ch}
+.facts{margin-top:28px;color:var(--soft);font-size:16px;max-width:58ch}
+.now{display:flex;gap:10px;align-items:center;margin-top:26px;font-size:15px;font-weight:600}
+.now::before{content:"";width:10px;height:10px;background:var(--cobalt);flex:none}
+.hero-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.hero-photo figcaption{font-size:13px;color:var(--faint);margin-top:8px}
+@media (max-width:820px){.hero .row{display:grid;grid-template-columns:1fr}.hero-text,.hero-photo{grid-column:auto}.hero-photo{max-width:260px;margin-top:36px}}
 
-/* stats */
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:56px;border-top:2px solid var(--ink)}
-.stats div{padding:18px 18px 4px 0;display:flex;flex-direction:column;gap:4px;min-width:0}
-.stats .n{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.4vw,34px);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
-.stats .c{font-size:14px;color:var(--muted);line-height:1.4}
-@media (max-width:700px){.stats{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:12px}}
+/* ledger */
+.ledger{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.ledger th{font-size:13px;font-weight:600;color:var(--faint);text-align:left;padding:0 12px 10px 0;border-bottom:1px solid var(--ink)}
+.ledger td{padding:16px 12px 16px 0;border-bottom:1px solid var(--rule);vertical-align:baseline}
+.ledger td:first-child{color:var(--soft);font-size:15px;width:38%}
+.ledger .was{font-size:18px;color:var(--faint);text-decoration:line-through;text-decoration-thickness:1px}
+.ledger .is{font-size:22px;font-weight:800;color:var(--cobalt);letter-spacing:-.01em}
+.ledger .where{font-size:13px;color:var(--faint);white-space:nowrap}
+.ledger-wrap{overflow-x:auto}
+.ledger .nil{text-decoration:none}
+@media (max-width:560px){.ledger td{padding:12px 8px 12px 0}.ledger .is{font-size:18px}.ledger .was{font-size:15px}.ledger td:first-child{font-size:14px}}
+@media (max-width:560px){.ledger .where{display:none}.ledger td:first-child{width:auto}}
+
+/* stories */
+.story+.story{margin-top:64px;padding-top:64px;border-top:1px solid var(--rule)}
+.story .meta{font-size:14px;color:var(--faint);margin-bottom:10px}
+.story h3{font-size:clamp(28px,3.6vw,42px);line-height:1.05;max-width:22ch}
+.story .lede{font-family:var(--serif);font-size:21px;line-height:1.45;margin-top:18px;max-width:60ch}
+.beats{margin-top:28px;display:grid;grid-template-columns:150px minmax(0,1fr);column-gap:24px}
+.beats dt{font-size:14px;font-weight:700;padding-top:16px;border-top:1px solid var(--rule)}
+.beats dd{margin:0;padding:14px 0 16px;border-top:1px solid var(--rule);font-family:var(--serif);font-size:18.5px;line-height:1.5;max-width:62ch}
+.beats dd p+p{margin-top:10px}
+.beats dd b{font-family:var(--sans);font-weight:700;font-size:.92em}
+@media (max-width:560px){.beats{grid-template-columns:1fr}.beats dt{padding-bottom:0}.beats dd{border-top:0;padding-top:4px}}
+.pull{margin-top:24px;padding:18px 22px;background:var(--cobalt-wash);border-left:3px solid var(--cobalt);font-family:var(--serif);font-size:19px;line-height:1.45;max-width:62ch}
+.pull cite{display:block;font-family:var(--sans);font-style:normal;font-size:13px;color:var(--soft);margin-top:8px}
+
+/* small things */
+.smalls{list-style:none;margin:0;padding:0}
+.smalls li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.smalls li:first-child{border-top:1px solid var(--ink)}
+.smalls b{display:block;font-size:17px}
+.smalls span{color:var(--soft);font-size:15.5px}
+.smalls em{font-style:normal;font-size:13px;color:var(--faint);white-space:nowrap;padding-top:3px}
+@media (max-width:560px){.smalls li{grid-template-columns:1fr;gap:2px}}
+
+/* record */
+.record{width:100%;border-collapse:collapse}
+.record td{padding:14px 16px 14px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.record tr:first-child td{border-top:1px solid var(--ink)}
+.record .when{font-size:14px;color:var(--faint);white-space:nowrap;width:140px;font-variant-numeric:tabular-nums}
+.record .what b{display:block}
+.record .what span{color:var(--soft);font-size:15px}
+.record-head{font-size:14px;font-weight:700;margin:36px 0 10px}
+.record-head:first-child{margin-top:0}
+@media (max-width:560px){.record .when{width:96px;white-space:normal}}
 
 /* about */
-.about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:56px;align-items:start}
-.about-text{display:flex;flex-direction:column;gap:16px;font-size:18px}
-.looking{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:22px}
-.looking h3{font-size:18px;margin-bottom:12px}
-.looking dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 16px;font-size:15.5px}
-.looking dt{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);padding-top:3px}
-.looking dd{margin:0}
-@media (max-width:760px){.about{grid-template-columns:1fr;gap:32px}}
-
-/* experience */
-.timeline{display:flex;flex-direction:column}
-.job{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;padding:28px 0;border-top:1px solid var(--line)}
-.job:last-child{border-bottom:1px solid var(--line)}
-.job .when{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:4px;font-variant-numeric:tabular-nums}
-.job .when small{display:block;font-family:var(--body);font-size:13.5px;margin-top:4px;color:var(--faint)}
-.job h3{font-size:21px;font-weight:700}
-.job .org{color:var(--muted);margin-top:2px}
-.job ul{margin:12px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:7px}
-.job ul b{font-weight:600}
-.roles{display:flex;flex-direction:column;gap:2px;margin-top:6px;font-size:14.5px;color:var(--muted)}
-@media (max-width:700px){.job{grid-template-columns:1fr;gap:6px}}
-.recog{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px;margin-top:16px}
-.recog>div{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--paper)}
-.recog h3{font-size:16px;margin-bottom:8px}
-.recog ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:15px}
-@media (max-width:640px){.recog{grid-template-columns:1fr}}
-.edu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:40px}
-.edu div{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--paper)}
-.edu h3{font-size:18px;margin-top:6px}
-.edu p{color:var(--muted);font-size:15px;margin-top:4px}
-@media (max-width:640px){.edu{grid-template-columns:1fr}}
-
-/* work */
-.cases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.case{background:var(--bg);border:1px solid var(--line);border-radius:18px;display:flex;flex-direction:column;overflow:hidden;min-width:0}
-.case.flag{grid-column:1/-1;background:var(--paper);border:2px solid var(--accent)}
-.case-body{padding:26px 26px 20px;display:flex;flex-direction:column;gap:12px;flex:1}
-.case .kicker{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-.case .kicker span:last-child{font-family:var(--mono);font-size:12px;color:var(--faint)}
-.case h3{font-size:clamp(21px,2.6vw,27px);font-weight:700}
-.case .sum{color:var(--muted)}
-.res{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:6px}
-.case:not(.flag) .res{grid-template-columns:repeat(2,minmax(0,1fr))}
-.res div{display:flex;flex-direction:column;gap:2px;min-width:0}
-.res .n{font-family:var(--display);font-weight:700;font-size:24px;color:var(--accent);font-variant-numeric:tabular-nums}
-.res .c{font-size:13.5px;color:var(--muted);line-height:1.35}
-details{border-top:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;padding:14px 26px;font-weight:600;font-size:15px;color:var(--accent);display:flex;justify-content:space-between;align-items:center}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:20px;line-height:1;transition:transform .2s}
-details[open] summary::after{transform:rotate(45deg)}
-.full{padding:0 26px 24px}
-.full dl{margin:0;display:grid;grid-template-columns:150px minmax(0,1fr)}
-.full dt,.full dd{padding:12px 0;border-top:1px solid var(--line);margin:0}
-.full dt{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);padding-top:15px;padding-right:12px}
-.full dd{min-width:0}
-.full ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px}
-@media (max-width:760px){.cases{grid-template-columns:1fr}.res{grid-template-columns:1fr 1fr}.full dl{grid-template-columns:1fr}.full dt{padding-bottom:0}.full dd{border-top:0;padding-top:4px}}
-.principles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:48px}
-.principles div{border-top:2px solid var(--ink);padding-top:14px}
-.principles h3{font-size:17px;margin-bottom:6px}
-.principles p{font-size:15px;color:var(--muted)}
-@media (max-width:820px){.principles{grid-template-columns:1fr 1fr}}
-@media (max-width:480px){.principles{grid-template-columns:1fr}}
-
-/* skills */
-.skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
-.skills h3{font-size:17px;margin-bottom:12px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips span{font-size:14px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
-@media (max-width:820px){.skills{grid-template-columns:1fr 1fr}}
-@media (max-width:480px){.skills{grid-template-columns:1fr}}
+.about p{font-family:var(--serif);font-size:20px;line-height:1.5;max-width:60ch}
+.about p+p{margin-top:16px}
+.tools{margin-top:32px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.tools h3{font-size:14px;font-weight:700;letter-spacing:0;margin-bottom:6px}
+.tools p{font-family:var(--sans);font-size:15.5px;color:var(--soft);line-height:1.5}
+@media (max-width:700px){.tools{grid-template-columns:1fr}}
 
 /* contact */
-.contact{background:var(--ink);color:var(--bg);border-radius:24px;padding:48px 36px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:center}
-.contact h2{font-size:clamp(28px,4vw,40px)}
-.contact p{opacity:.8;margin-top:12px;max-width:52ch}
-.contact .actions{display:flex;flex-direction:column;gap:12px;align-items:flex-start;min-width:0}
-.contact code{font-family:var(--mono);font-size:15px;background:rgba(127,127,127,.22);padding:9px 12px;border-radius:8px;user-select:all;overflow-wrap:anywhere}
-.contact .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.contact .btn.ghost{color:var(--bg);border-color:rgba(127,127,127,.45)}
-@media (max-width:760px){.contact{grid-template-columns:1fr;padding:36px 24px}}
-footer{padding-block:32px 48px;color:var(--faint);font-size:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-footer a{color:var(--muted)}
+.contact{border-bottom:0;padding-bottom:40px}
+.contact .ask{font-family:var(--serif);font-size:clamp(24px,3vw,32px);line-height:1.3;max-width:28ch}
+.mail{display:inline-block;margin-top:24px;font-size:clamp(26px,5vw,52px);font-weight:800;letter-spacing:-.03em;color:var(--cobalt);text-decoration:none;border-bottom:3px solid var(--cobalt);overflow-wrap:anywhere}
+.mail:hover{color:var(--ink);border-color:var(--ink)}
+.links{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;font-size:15px;align-items:center}
+.links button{font:600 14px var(--sans);background:none;border:1px solid var(--ink);color:var(--ink);padding:7px 14px;cursor:pointer}
+.links button:hover{background:var(--ink);color:var(--paper)}
+footer{padding-block:24px 40px;font-size:13px;color:var(--faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--ink)}
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<nav class="nav" id="nav" aria-label="Main">
-  <div class="container">
-    <a class="brand" href="#top">Trevor D'Costa</a>
-    <div class="links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
+  <header class="top">
+    <a class="me" href="#">Trevor D'Costa</a>
+    <nav aria-label="Main">
+      <a href="#results">Results</a>
       <a href="#work">Work</a>
-      <a href="#skills">Skills</a>
-      <a class="btn" href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<main id="top">
-  <header class="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div>
-          <span class="label">Product · Strategy · Finance</span>
-          <h1>Turning operational complexity into <em>products that drive results</em>.</h1>
-          <p class="lede">Management professional bringing a rare blend of software engineering, operational analytics and financial acumen. Currently leading end-to-end digital transformation at Icestasy, backed by 2+ years of engineering rigour at Barclays and investment banking experience at SHC Growth Partners. Pursuing an M.Sc. in Finance at SIMSREE, Mumbai.</p>
-          <span class="avail"><i></i>Open to immediate opportunities · Mumbai or remote</span>
-          <div class="cta">
-            <a class="btn" href="#work">See my work</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/trevordco/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
-        <figure class="portrait">
-          <img src="images/trevor-480.jpg" alt="Trevor D'Costa" width="480" height="480">
-          <figcaption><b>Trevor D'Costa</b><span>Product Manager · Mumbai</span></figcaption>
-        </figure>
-      </div>
-
-      <div class="stats" aria-label="Highlights">
-        <div><span class="n">70–100</span><span class="c">orders processed daily on the platform I built</span></div>
-        <div><span class="n">≤2 min</span><span class="c">to process an order, down from 10–15 minutes</span></div>
-        <div><span class="n">3</span><span class="c">integrated platforms delivered in four months</span></div>
-        <div><span class="n">−48%</span><span class="c">incident response time at Barclays</span></div>
-      </div>
-    </div>
+      <a href="#record">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section id="about" class="alt">
-    <div class="container">
-      <div class="about">
-        <div>
-          <div class="sec-head" style="margin-bottom:20px">
-            <span class="label">About</span>
-            <h2>Engineer by training. Product manager by instinct.</h2>
-          </div>
-          <div class="about-text">
-            <p>Throughout my career, I have been drawn to the product dimension of every role: understanding what users genuinely need, determining what to build first, and aligning teams around its delivery.</p>
-            <p>At Barclays, this meant engineering monitoring and automation solutions and leading high-stakes data centre recovery exercises. At Icestasy, it meant recognising that core operations depended on WhatsApp messages and spreadsheets, building the case for change, and delivering the integrated platforms the business now relies on.</p>
-            <p>Beyond work, I am a lifelong football enthusiast from Goa, with a keen interest in history, business strategy, discovering new cafés and travel.</p>
-          </div>
+  <div class="hero">
+    <div class="row">
+      <div class="hero-text">
+        <h1>Trevor<br><span class="last">D'Costa</span></h1>
+        <p class="claim">I build the systems a business runs on, and then I make sure people actually use them.</p>
+        <p class="facts">Product Management Intern at Icestasy, an ice cream company in Mumbai. Before that, two years as a software engineer at Barclays and a summer in investment banking at SHC Growth Partners. Currently completing an M.Sc. in Finance at SIMSREE.</p>
+        <p class="now">Open to product roles now: internship, internship to full-time, or full-time.</p>
+      </div>
+      <figure class="hero-photo">
+        <img src="images/trevor-portrait.jpg" alt="Trevor D'Costa" width="640" height="800">
+      </figure>
+    </div>
+  </div>
+
+  <section id="results">
+    <div class="row">
+      <div class="side"><h2>Results<span>Before and after</span></h2></div>
+      <div class="main">
+        <div class="ledger-wrap">
+          <table class="ledger">
+            <thead><tr><th>What changed</th><th>Before</th><th>After</th><th class="where">Where</th></tr></thead>
+            <tbody>
+              <tr><td>Time to enter one customer order</td><td class="was">10–15 min</td><td class="is">under 2 min</td><td class="where">Icestasy</td></tr>
+              <tr><td>Structured orders every day</td><td class="was">WhatsApp threads</td><td class="is">70–100 a day</td><td class="where">Icestasy</td></tr>
+              <tr><td>Manual processing time</td><td class="was">spreadsheets</td><td class="is">−40%</td><td class="where">Icestasy</td></tr>
+              <tr><td>Incident response time</td><td class="was nil">–</td><td class="is">−48%</td><td class="where">Barclays</td></tr>
+              <tr><td>Storage downtime</td><td class="was nil">–</td><td class="is">−30%</td><td class="where">Barclays</td></tr>
+              <tr><td>Manual data work per week</td><td class="was">30 hours</td><td class="is">automated</td><td class="where">Barclays</td></tr>
+              <tr><td>Deals per advisor (design capacity)</td><td class="was">5</td><td class="is">50</td><td class="where">SHC</td></tr>
+            </tbody>
+          </table>
         </div>
-        <aside class="looking" aria-labelledby="looking-title">
-          <h3 id="looking-title">What I'm looking for</h3>
-          <dl>
-            <dt>Role</dt><dd>Product Manager or Associate PM</dd>
-            <dt>Areas</dt><dd>B2B commerce, supply chain, fintech</dd>
-            <dt>Start</dt><dd>Immediately, in an internship, internship-to-full-time or full-time capacity</dd>
-            <dt>Where</dt><dd>Mumbai or remote</dd>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="row">
+      <div class="side"><h2>Work<span>Three stories</span></h2></div>
+      <div class="main">
+
+        <article class="story">
+          <p class="meta">Icestasy · Jun 2026 to now · Product Management Intern</p>
+          <h3>Replacing a WhatsApp-run business without asking customers to change</h3>
+          <p class="lede">Icestasy sells ice cream to cafés, hotels, retailers and distributors across six regions. When I joined, almost every order arrived as a WhatsApp message. A salesperson retyped each one, the kitchen learned what to make when someone told them, and stock planning was largely estimation.</p>
+          <dl class="beats">
+            <dt>The pitch</dt>
+            <dd><p>The obvious answer was a customer ordering app. I argued against it. Our customers were comfortable on WhatsApp, and asking them to switch would have cost us orders. I proposed to the owner that we keep WhatsApp and rebuild everything that happens after the message arrives.</p></dd>
+            <dt>What I built</dt>
+            <dd><p><b>Order Desk.</b> A salesperson pastes the message and an AI parser turns it into a structured order, with the right products, region-based pricing for six regions and a GST invoice.</p>
+              <p><b>Production and inventory.</b> Orders feed the kitchen and factory directly. Each week the system looks back over six weeks of orders, works out what each flavour and ingredient needs, and flags anything with less than about two and a half weeks of cover.</p>
+              <p><b>HRMS.</b> Attendance, leave and approvals, now live for 18 employees, with the rest of a 40+ team being onboarded.</p></dd>
+            <dt>A decision I'd defend</dt>
+            <dd><p>When a message says "Belgian", it could mean Belgian Speculoos or Belgian Chocolate. Order Desk never guesses. It shows the salesperson both and lets them choose. And if the AI service goes down, a rule-based fallback keeps orders moving. A slow order is an inconvenience; a wrong delivery costs a customer.</p></dd>
+            <dt>Result</dt>
+            <dd><p>70–100 orders a day now go through Order Desk. Entering one takes under two minutes instead of 10–15. Manual processing time across the business is down 40%, and stock-outs and wastage have fallen.</p></dd>
+            <dt>What I'd change</dt>
+            <dd><p>I would agree on success metrics before launch. I measured order time carefully, but tracked the drop in stock-outs only informally, which makes the strongest part of the story the hardest to prove.</p></dd>
           </dl>
-        </aside>
+          <p class="pull">I led it end to end on my own: requirements, process design, build, testing, rollout and training, using AI-assisted engineering to move faster than a small company normally could.</p>
+        </article>
+
+        <article class="story">
+          <p class="meta">SHC Growth Partners · Apr to Jun 2026 · Summer Intern, Investment Banking</p>
+          <h3>Asking how many deals one advisor could run</h3>
+          <p class="lede">I spent the summer on the analyst side of deals: DCF and comparable valuations for live mandates, virtual data rooms, and buyer research for cross-border M&amp;A. The work that didn't scale was matching each mandate to the right investors and writing every outreach email by hand.</p>
+          <dl class="beats">
+            <dt>What I built</dt>
+            <dd><p>A small Chrome tool that sends individually personalised investor emails through Zoho Mail, with duplicate checks and pacing so nothing reads like a mass mailing.</p></dd>
+            <dt>What I designed</dt>
+            <dd><p>On my own time, a larger system: a rules engine that encodes compliance checks so routine decisions are automatic, an algorithm that matches investors to deals, and a seven-stage pipeline to track every mandate. It was designed so one advisor could run 50 deals instead of 5.</p></dd>
+            <dt>Outcome</dt>
+            <dd><p>I presented it to my manager before the internship ended, and it was well received by the firm's leadership.</p></dd>
+          </dl>
+        </article>
+
+        <article class="story">
+          <p class="meta">Barclays, Pune · Jul 2023 to Sep 2025 · Graduate Analyst, then Software Engineer (BA4)</p>
+          <h3>Two years where a missed alert meant an outage</h3>
+          <p class="lede">I worked in storage infrastructure, where problems surface either early or expensively. The team relied on manual checks and on alerts so noisy that people had learned to ignore them.</p>
+          <dl class="beats">
+            <dt>What I did</dt>
+            <dd><p>Built alerting for storage arrays, starting with the three or four that mattered most so the team would trust it, then added observability with automated anomaly detection. I automated more than 60% of remediation workflows and the production storage data handling that used to take 30 hours of manual work every week.</p></dd>
+            <dt>Result</dt>
+            <dd><p>Incident response time fell 48% and downtime 30%. Data accuracy improved 38%. I was promoted to BA4 within 20 months.</p></dd>
+            <dt>Also</dt>
+            <dd><p>Led a team of four through four to five SAN storage data centre recovery exercises, each delivered ahead of schedule, and trained new joiners along the way.</p></dd>
+          </dl>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <section id="experience">
-    <div class="container">
-      <div class="sec-head">
-        <span class="label">Experience</span>
-        <h2>Where I've worked</h2>
-      </div>
-      <div class="timeline">
-        <article class="job">
-          <div class="when">Jun 2026 – now</div>
-          <div>
-            <h3>Product Management Intern</h3>
-            <p class="org">Icestasy Projects Pvt. Ltd. · Mumbai</p>
-            <ul>
-              <li>Leading <b>end-to-end digital transformation</b> of Sales, Production, HR and Finance onto one integrated platform, cutting <b>manual processing time by 40%</b>.</li>
-              <li>Designed and launched an <b>AI-powered order automation system</b> that turns WhatsApp orders into structured records, processing <b>70–100 orders/day</b> and reducing order entry time from <b>10–15 min to under 2 min</b>.</li>
-              <li>Re-engineered production and inventory planning with demand-based forecasting, delivering <b>real-time stock visibility</b> and fewer stock-outs.</li>
-              <li>Owned delivery from requirements to rollout, including an <b>HRMS live for 18 employees</b> and scaling to 40+, using AI-assisted engineering.</li>
-            </ul>
-          </div>
-        </article>
-        <article class="job">
-          <div class="when">Apr 2026 – Jun 2026<small>Mumbai</small></div>
-          <div>
-            <h3>Summer Intern, Investment Banking</h3>
-            <p class="org">SHC Growth Partners</p>
-            <ul>
-              <li>Supported live deal decisions by building integrated <b>DCF and financial models</b> with scenario/sensitivity analysis.</li>
-              <li>Drove structured, on-time deal execution by managing virtual data rooms and coordinating cross-functional stakeholders.</li>
-              <li>Identified cross-border <b>M&amp;A opportunities</b> through hypothesis-driven market research and buyer identification.</li>
-              <li>Automated personalised investor outreach by building a <b>Zoho Mail-integrated outreach tool</b>.</li>
-              <li>Designed and pitched a compliance-driven <b>Rules Engine</b> and <b>investor matching algorithm</b> with a 7-stage deal pipeline, built to scale a single advisor’s deal capacity <b>10x, from 5 to 50</b>; well received by SHC leadership.</li>
-            </ul>
-          </div>
-        </article>
-        <article class="job">
-          <div class="when">Jul 2023 – Sep 2025<small>Pune</small></div>
-          <div>
-            <h3>Barclays</h3>
-            <div class="roles"><span>Software Engineer (BA4) · Mar 2025 – Sep 2025</span><span>Graduate Analyst (BA3) · Jul 2023 – Feb 2025</span></div>
-            <ul>
-              <li>Promoted to <b>BA4</b> grade within <b>20 months</b> in recognition of outstanding performance and key project contributions.</li>
-              <li>Drove operational efficiency by cutting <b>incident response time by 48%</b> and <b>downtime by 30%</b>, and automating <b>60%+ of remediation workflows</b>.</li>
-              <li>Automated production storage data handling, <b>saving 30 hours/week</b> and <b>improving data accuracy by 38%</b>.</li>
-              <li>Conducted root-cause analysis across <b>150+ operational issues</b>, maintaining <b>90% resolution accuracy</b>.</li>
-              <li><b>Led a 4-member team</b> through 4–5 SAN storage data centre recovery (DCR) exercises, delivering ahead of schedule while upskilling new joiners.</li>
-              <li>Co-developed the <b>Barclays CE Idea Hub</b> portal with a team of 7, driving <b>300+ idea submissions</b> across GTIS India.</li>
-            </ul>
-          </div>
-        </article>
-        <article class="job">
-          <div class="when">Jun 2022 – Mar 2023<small>Mumbai</small></div>
-          <div>
-            <h3>Full Stack Developer Intern</h3>
-            <p class="org">Zedex Info</p>
-            <ul>
-              <li>Built a performance-tracking system for a 10–15 member SEO and content team, <b>improving reporting efficiency by 60%</b>.</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <div class="edu" aria-label="Education">
-        <div><span class="label">2025 – 2027</span><h3>M.Sc. Finance</h3><p>SIMSREE, Mumbai (Dr. Homi Bhabha State University) · CGPA 9.46/10</p></div>
-        <div><span class="label">2019 – 2023</span><h3>B.E. Computer Engineering</h3><p>FCRIT, Navi Mumbai (University of Mumbai) · CGPA 9.22/10</p></div>
-      </div>
-      <div class="recog" aria-label="Recognition and certifications">
-        <div><h3>Recognition</h3><ul>
-          <li><b>1st runner-up</b>, FinInvesto’25 Equity Research Competition (SIMSREE), 200+ teams</li>
-          <li><b>2nd runner-up</b>, Yukti'25 Case Competition (IIM Nagpur), 640+ teams</li>
-          <li><b>Distinguished Judge</b>, Hackathon KODE Finale (ATLAS SkillTech University), evaluating the top 24 of 400+ teams</li>
-        </ul></div>
-        <div><h3>Certifications</h3><ul>
-          <li>Data-Driven Product Management (LinkedIn)</li>
-          <li>Lean Six Sigma Green Belt (KPMG)</li>
-        </ul></div>
+  <section>
+    <div class="row">
+      <div class="side"><h2>Smaller things<span>Worth a mention</span></h2></div>
+      <div class="main">
+        <ul class="smalls">
+          <li><div><b>Barclays CE Idea Hub</b><span>Co-developed the portal with a team of seven. It drew 300+ idea submissions across GTIS India.</span></div><em>Barclays</em></li>
+          <li><div><b>Project Nutrition Nirmaan</b><span>A three-pillar public health strategy on child anaemia in India. 2nd runner-up of 640+ teams at IIM Nagpur's Yukti'25.</span></div><em>Case competition</em></li>
+          <li><div><b>FinInvesto'25 equity research</b><span>1st runner-up of 200+ teams at SIMSREE.</span></div><em>Competition</em></li>
+          <li><div><b>Performance tracking at Zedex</b><span>GraphQL and MySQL back end for a 10–15 person content team. Reporting became 60% faster.</span></div><em>Internship</em></li>
+          <li><div><b>Hackathon judge</b><span>Evaluated the top 24 of 400+ teams at the KODE finale, ATLAS SkillTech University.</span></div><em>Judging</em></li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="work" class="alt">
-    <div class="container">
-      <div class="sec-head">
-        <span class="label">Selected work</span>
-        <h2>Case studies</h2>
-        <p>Each case sets out the problem, the users, the decisions that shaped the solution and the outcome achieved. Expand any card for the complete account.</p>
-      </div>
-
-      <div class="cases">
-        <article class="case flag">
-          <div class="case-body">
-            <div class="kicker"><span class="label">Icestasy · Flagship</span><span>Idea to launch</span></div>
-            <h3>Building the operating system for an ice cream business</h3>
-            <p class="sum">Three integrated platforms spanning sales, production and HR, relied upon daily by sales, kitchen, factory and office teams.</p>
-            <div class="res">
-              <div><span class="n">70–100</span><span class="c">orders processed daily on Order Desk</span></div>
-              <div><span class="n">~85%</span><span class="c">faster order entry (10–15 min to 1–2 min)</span></div>
-              <div><span class="n">Lower</span><span class="c">stock-outs and wastage</span></div>
-            </div>
-          </div>
-          <details>
-            <summary>Read the case study</summary>
-            <div class="full"><dl>
-              <dt>Problem</dt><dd>Orders from cafés, hotels, retailers and distributors across six regions arrived as unstructured WhatsApp messages. Sales representatives re-keyed each order manually, taking 10–15 minutes apiece, while production lacked real-time visibility of demand, leaving inventory planning to estimation.</dd>
-              <dt>Users</dt><dd>15–20 salespeople and six regional heads; kitchen and factory teams; 18 employees on the HRMS, scaling to 40+.</dd>
-              <dt>My role</dt><dd>Identified the opportunity, secured the owner's buy-in, defined the product specifications, built the platforms using AI-assisted development, and led rollout and user training.</dd>
-              <dt>Decisions</dt><dd><ul>
-                <li><b>Meet users where they are.</b> Customers continue to order via WhatsApp; sales representatives paste the message and the AI parser constructs the order.</li>
-                <li><b>Accuracy over automation.</b> Ambiguous items require confirmation by the sales representative, and a rule-based fallback maintains continuity if the AI service is unavailable.</li>
-                <li><b>One source of truth.</b> Sales and production share a single database, so weekly ingredient requirements are calculated from six weeks of actual orders, with alerts when cover falls below 2.5 weeks.</li>
-                <li><b>Full audit trail.</b> Every stock movement is logged as a transaction rather than overwriting totals, so every figure can be traced.</li>
-              </ul></dd>
-              <dt>What shipped</dt><dd><b>Order Desk:</b> order capture, region-based pricing across six regions, GST invoicing, a sales dashboard and seven reports. <b>Production:</b> receiving, mixing, filling and dispatch, with live inventory and low-stock alerts. <b>HRMS:</b> attendance, leave and approvals.</dd>
-              <dt>Learning</dt><dd>Success metrics should be defined before launch. Order entry time was measured rigorously, whereas the reduction in stock-outs was tracked only informally.</dd>
-            </dl></div>
-          </details>
-        </article>
-
-        <article class="case">
-          <div class="case-body">
-            <div class="kicker"><span class="label">SHC Growth Partners · Independent initiative</span><span>Designed and presented</span></div>
-            <h3>Scaling an advisor's deal capacity 10x</h3>
-            <p class="sum">A compliance-driven rules engine, an investor-matching algorithm and a seven-stage deal pipeline, complemented by a personalised outreach tool.</p>
-            <div class="res">
-              <div><span class="n">5 → 50</span><span class="c">deals per advisor (design capacity)</span></div>
-              <div><span class="n">7</span><span class="c">deal pipeline stages</span></div>
-            </div>
-          </div>
-          <details>
-            <summary>Read the case study</summary>
-            <div class="full"><dl>
-              <dt>Problem</dt><dd>Matching mandates to suitable investors and personalising outreach were manual processes, constraining the number of deals a single advisor could manage.</dd>
-              <dt>What I did</dt><dd>Designed a rules engine that encodes compliance requirements to automate routine decisions, an algorithm that matches investors to deals, and a 7-stage pipeline to track each deal. Built a Chrome extension that sends individually personalised emails through Zoho Mail, with duplicate detection and rate-limit handling.</dd>
-              <dt>Decisions</dt><dd>Each communication is dispatched individually rather than as a mass mailing, ensuring every investor receives a personalised message.</dd>
-              <dt>Outcome</dt><dd>Presented to my manager during the internship and well received by firm leadership.</dd>
-            </dl></div>
-          </details>
-        </article>
-
-        <article class="case">
-          <div class="case-body">
-            <div class="kicker"><span class="label">Barclays · Monitoring</span><span>Planned and built</span></div>
-            <h3>Detecting storage issues before they cause outages</h3>
-            <p class="sum">Alerting for storage arrays, followed by observability with automated anomaly detection.</p>
-            <div class="res">
-              <div><span class="n">−48%</span><span class="c">incident response time</span></div>
-              <div><span class="n">−30%</span><span class="c">downtime</span></div>
-            </div>
-          </div>
-          <details>
-            <summary>Read the case study</summary>
-            <div class="full"><dl>
-              <dt>Problem</dt><dd>Issues surfaced late, either through manual checks or through excessive alerts that the team had learned to disregard.</dd>
-              <dt>Users</dt><dd>Storage engineering team and wider department.</dd>
-              <dt>Decisions</dt><dd>Started with the 3–4 highest-impact arrays and the most critical alert types to build trust and avoid alert fatigue, then introduced anomaly detection once the foundation was stable.</dd>
-            </dl></div>
-          </details>
-        </article>
-
-        <article class="case">
-          <div class="case-body">
-            <div class="kicker"><span class="label">Barclays · Automation</span><span>Planned and built</span></div>
-            <h3>Eliminating 30 hours of manual work every week</h3>
-            <p class="sum">Automated production storage data handling, with dashboards to monitor performance.</p>
-            <div class="res">
-              <div><span class="n">30 hrs</span><span class="c">saved per week</span></div>
-              <div><span class="n">+38%</span><span class="c">data accuracy</span></div>
-            </div>
-          </div>
-          <details>
-            <summary>Read the case study</summary>
-            <div class="full"><dl>
-              <dt>Problem</dt><dd>Repetitive manual data processing was time-consuming and prone to error.</dd>
-              <dt>Users</dt><dd>Storage engineering team.</dd>
-              <dt>Decisions</dt><dd>Automated high-volume steps first while keeping approvals manual, preserving control in a regulated banking environment.</dd>
-            </dl></div>
-          </details>
-        </article>
-
-        <article class="case">
-          <div class="case-body">
-            <div class="kicker"><span class="label">Barclays · Delivery</span><span>Planned and led</span></div>
-            <h3>Leading data centre recovery exercises across teams</h3>
-            <p class="sum">High-stakes recovery work where a single misstep could cause an outage.</p>
-            <div class="res">
-              <div><span class="n">4–5</span><span class="c">DCR exercises led with a team of 4</span></div>
-              <div><span class="n">Ahead</span><span class="c">of schedule on every exercise</span></div>
-            </div>
-          </div>
-          <details>
-            <summary>Read the case study</summary>
-            <div class="full"><dl>
-              <dt>Problem</dt><dd>Each recovery exercise depended on multiple infrastructure teams executing in sequence under tight timelines.</dd>
-              <dt>My role</dt><dd>Led a 4-member storage team and owned the work plans, schedules, resourcing and progress reporting.</dd>
-              <dt>Decisions</dt><dd>Aligned the execution sequence with every dependent team in advance, investing in upfront planning to ensure seamless execution. Recognised for precision in operations and risk management.</dd>
-            </dl></div>
-          </details>
-        </article>
-
-        
-      </div>
-
-      <div class="principles" aria-label="How I work">
-        <div><h3>Meet users where they are</h3><p>Order Desk begins with a WhatsApp message, so adoption required no change in user behaviour.</p></div>
-        <div><h3>Design for failure</h3><p>Fallbacks, confirmations and clear choices safeguard user trust.</p></div>
-        <div><h3>Ship small, then scale</h3><p>Launch the core workflow first, then expand once adoption is established.</p></div>
-        <div><h3>Measure the change</h3><p>Every initiative is judged by measurable outcomes: minutes per order, hours saved, response time.</p></div>
+  <section id="record">
+    <div class="row">
+      <div class="side"><h2>Experience<span>The short version</span></h2></div>
+      <div class="main">
+        <p class="record-head">Work</p>
+        <table class="record">
+          <tr><td class="when">Jun 2026 – now</td><td class="what"><b>Product Management Intern</b><span>Icestasy Projects Pvt. Ltd., Mumbai</span></td></tr>
+          <tr><td class="when">Apr – Jun 2026</td><td class="what"><b>Summer Intern, Investment Banking</b><span>SHC Growth Partners, Mumbai</span></td></tr>
+          <tr><td class="when">Mar – Sep 2025</td><td class="what"><b>Software Engineer (BA4)</b><span>Barclays, Pune</span></td></tr>
+          <tr><td class="when">Jul 2023 – Feb 2025</td><td class="what"><b>Graduate Analyst (BA3)</b><span>Barclays, Pune</span></td></tr>
+          <tr><td class="when">Jun 2022 – Mar 2023</td><td class="what"><b>Full Stack Developer Intern</b><span>Zedex Info Pvt. Ltd., Mumbai</span></td></tr>
+        </table>
+        <p class="record-head">Education</p>
+        <table class="record">
+          <tr><td class="when">2025 – 2027</td><td class="what"><b>M.Sc. Finance</b><span>SIMSREE, Mumbai (Dr. Homi Bhabha State University) · CGPA 9.46/10</span></td></tr>
+          <tr><td class="when">2019 – 2023</td><td class="what"><b>B.E. Computer Engineering</b><span>FCRIT, Navi Mumbai (University of Mumbai) · CGPA 9.22/10</span></td></tr>
+        </table>
+        <p class="record-head">Certifications</p>
+        <table class="record">
+          <tr><td class="when">KPMG</td><td class="what"><b>Lean Six Sigma Green Belt</b></td></tr>
+          <tr><td class="when">LinkedIn</td><td class="what"><b>Data-Driven Product Management</b></td></tr>
+        </table>
       </div>
     </div>
   </section>
 
-  <section id="skills">
-    <div class="container">
-      <div class="sec-head">
-        <span class="label">Skills</span>
-        <h2>What I bring</h2>
-      </div>
-      <div class="skills">
-        <div><h3>Product Management</h3><div class="chips"><span>Product discovery</span><span>Requirements (PRDs)</span><span>Prioritisation</span><span>Roadmaps</span><span>Change management</span><span>Stakeholder management</span><span>Agile delivery</span></div></div>
-        <div><h3>Analytics</h3><div class="chips"><span>SQL</span><span>Python</span><span>Power BI</span><span>Excel</span><span>Dashboards</span></div></div>
-        <div><h3>Technology</h3><div class="chips"><span>Next.js</span><span>Flask</span><span>Supabase</span><span>PostgreSQL</span><span>LLM integration</span><span>Git &amp; CI/CD</span></div></div>
-        <div><h3>Finance &amp; Strategy</h3><div class="chips"><span>Financial modelling (DCF)</span><span>M&amp;A research</span><span>Pricing strategy</span><span>Risk management</span><span>Lean Six Sigma</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" style="padding-top:0">
-    <div class="container">
-      <div class="contact">
-        <div>
-          <h2>Let's discuss your next product.</h2>
-          <p>I am open to immediate opportunities in an internship, internship-to-full-time or full-time capacity, and welcome conversations about your product, whether or not you are currently hiring.</p>
-        </div>
-        <div class="actions">
-          <div class="row"><code id="email">tardcosta4@gmail.com</code><button class="btn" id="copy" type="button">Copy email</button></div>
-          <div class="row">
-            <a class="btn ghost" href="https://www.linkedin.com/in/trevordco/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn ghost" href="https://github.com/dcostat04" target="_blank" rel="noopener">GitHub</a>
-          </div>
+  <section id="about" class="about">
+    <div class="row">
+      <div class="side"><h2>About<span>And how I work</span></h2></div>
+      <div class="main">
+        <p>I trained as a computer engineer, spent two years keeping a bank's storage running, and then went to study finance. Along the way I noticed that the work I enjoyed most was never the code itself. It was working out what people actually needed, deciding what to build first, and getting a room of different teams to agree on it.</p>
+        <p>I like problems that look small from the outside: a WhatsApp message that takes fifteen minutes to retype, an alert nobody reads. They usually turn out to be where the real cost is. I'm looking for a product role in B2B commerce, supply chain or fintech, where engineering, operations and money meet.</p>
+        <p>Outside work I'm a Goan, so football is not optional. I read a lot of history and business strategy, and I'm always planning the next trip.</p>
+        <div class="tools">
+          <div><h3>Product</h3><p>Discovery, writing requirements, prioritisation, roadmaps, rollout and training, stakeholder management.</p></div>
+          <div><h3>Data and building</h3><p>SQL, Python, Excel and Power BI. I build with Next.js, Flask and Supabase, and use AI coding tools to move quickly.</p></div>
+          <div><h3>Finance</h3><p>DCF and comparables valuation, financial modelling, pricing and risk management.</p></div>
         </div>
       </div>
     </div>
   </section>
-</main>
 
-<div class="container"><footer><span>Trevor D'Costa · Mumbai, India</span><a href="#top">Back to top ↑</a></footer></div>
+  <section id="contact" class="contact">
+    <div class="row">
+      <div class="side"><h2>Contact</h2></div>
+      <div class="main">
+        <p class="ask">If you're building something in B2B commerce, supply chain or fintech, I'd like to hear about it.</p>
+        <a class="mail" id="email" href="mailto:tardcosta4@gmail.com">tardcosta4@gmail.com</a>
+        <div class="links">
+          <button type="button" id="copy">Copy email</button>
+          <a href="https://www.linkedin.com/in/trevordco/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/dcostat04" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <footer><span>Trevor D'Costa · Mumbai</span><a href="#">Back to top</a></footer>
+</div>
 <script>
-(function(){
-  var nav=document.getElementById('nav');
-  function onScroll(){nav.classList.toggle('scrolled',window.scrollY>8)}
-  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
-  var links=[].slice.call(document.querySelectorAll('.links a:not(.btn)'));
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
-    ['about','experience','work','skills'].forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el)});
-  }
-  document.getElementById('copy').addEventListener('click',function(){
-    var b=this,t=document.getElementById('email').textContent;
-    function ok(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy email'},1600)}
-    function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Press Ctrl/Cmd+C'}
-    try{navigator.clipboard.writeText(t).then(ok,sel)}catch(e){sel()}
-  });
-})();
+document.getElementById('copy').addEventListener('click',function(){
+  var b=this,t='tardcosta4@gmail.com';
+  function ok(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy email'},1600)}
+  function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Press Ctrl/Cmd+C'}
+  try{navigator.clipboard.writeText(t).then(ok,sel)}catch(e){sel()}
+});
 </script>
 </body>
 </html>
