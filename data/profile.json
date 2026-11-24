@@ -1,0 +1,116 @@
+{
+  "_readme": "Single source of truth for the Experience section, the 'At a glance' panel and resume.html. Edit here (or run tools/linkedin_sync.py on a LinkedIn data export) and every page updates. Dates are YYYY-MM; leave end empty for a current role.",
+  "name": "Trevor D'Costa",
+  "location": "Mumbai",
+  "email": "tardcosta4@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/trevordco/",
+  "github": "https://github.com/dcostat04",
+  "website": "https://dcostat04.github.io/trevorportfolio/",
+  "looking_for": "Product Manager or Associate PM roles in B2B software and fintech",
+  "availability": "Immediately · internship, internship to full-time, or full-time",
+  "work_mode": "Mumbai or remote",
+  "summary": "Management professional bringing a rare blend of software engineering, operational analytics and financial acumen. Most recently led end-to-end digital transformation at Icestasy, backed by 2+ years of engineering rigour at Barclays.",
+  "experience": [
+    {
+      "title": "Product Management Intern",
+      "company": "Icestasy Projects Pvt. Ltd.",
+      "location": "Mumbai",
+      "start": "2026-06",
+      "end": "2026-11",
+      "case_study": "work/icestasy.html",
+      "bullets": [
+        "Spearheaded the digital transformation of business operations by developing an integrated platform for Sales, Production, HR and Finance, reducing manual processing time by **40%**",
+        "Designed and launched an AI-powered order automation system converting WhatsApp orders into structured records, processing **70–100 orders/day** and cutting order entry from 10–15 minutes to **under 2**",
+        "Re-engineered production, inventory and workforce processes with weekly requirement planning, live stock dashboards and an HRMS live for **18 employees**",
+        "Led the project end to end independently, from business requirements and process design to testing, rollout, documentation and handover"
+      ]
+    },
+    {
+      "title": "Summer Intern – Investment Banking",
+      "company": "SHC Growth Partners",
+      "location": "Mumbai",
+      "start": "2026-04",
+      "end": "2026-06",
+      "case_study": "work/shc.html",
+      "bullets": [
+        "Built DCF, comparable companies and precedent transaction models with scenario and sensitivity analysis to support live deals and pitches",
+        "Supported cross-border M&A and equity and debt fundraising through market research and buyer identification; managed virtual data rooms",
+        "Designed a compliance-driven rules engine, investor-matching algorithm and 7-stage deal pipeline built to scale one advisor from **5 to 50 deals (10x)**; pitched to the firm"
+      ]
+    },
+    {
+      "title": "Software Engineer (BA4)",
+      "company": "Barclays",
+      "location": "Pune",
+      "start": "2025-03",
+      "end": "2025-09",
+      "case_study": "work/barclays.html",
+      "bullets": [
+        "Drove storage reliability by building alerting and anomaly-detection observability, reducing incident response time by **48%** and downtime by **30%**",
+        "Automated **60%+** of remediation workflows; promoted to BA4 within **20 months**"
+      ]
+    },
+    {
+      "title": "Graduate Analyst (BA3)",
+      "company": "Barclays",
+      "location": "Pune",
+      "start": "2023-07",
+      "end": "2025-02",
+      "case_study": "work/barclays.html",
+      "bullets": [
+        "Automated switch-port remediation for Brocade and Cisco, delivered through ITSM and Agile practices",
+        "Automated production storage data handling, saving **30 hours/week** and improving data accuracy by **38%**",
+        "Performed root-cause analysis on **150+** operational issues with **90%** resolution accuracy",
+        "Led a team of 4 through 4–5 SAN storage data centre recovery exercises, delivered ahead of schedule",
+        "Co-developed the Barclays CE Idea Hub portal with a team of 7, driving **300+** idea submissions across GTIS India"
+      ]
+    },
+    {
+      "title": "Full Stack Developer Intern",
+      "company": "Zedex Info Pvt. Ltd.",
+      "location": "Mumbai",
+      "start": "2022-06",
+      "end": "2023-03",
+      "bullets": [
+        "Built a GraphQL and MySQL performance-tracking system for a 10–15 member SEO and content team, making reporting **60%** faster"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. Finance",
+      "school": "SIMSREE, Mumbai",
+      "detail": "Dr. Homi Bhabha State University · CGPA 9.46/10",
+      "start": "2025",
+      "end": "2027"
+    },
+    {
+      "degree": "B.E. Computer Engineering",
+      "school": "FCRIT, Navi Mumbai",
+      "detail": "University of Mumbai · CGPA 9.22/10",
+      "start": "2019",
+      "end": "2023"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Lean Six Sigma Green Belt",
+      "issuer": "KPMG"
+    },
+    {
+      "name": "Data-Driven Product Management",
+      "issuer": "LinkedIn"
+    }
+  ],
+  "achievements": [
+    "1st Runner-Up, FinInvesto'25 Equity Research Competition, SIMSREE (200+ teams)",
+    "2nd Runner-Up, Yukti'25 Case Competition, IIM Nagpur (640+ teams), for Project Nutrition Nirmaan",
+    "Distinguished Judge, Hackathon KODE Finale, ATLAS SkillTech University (top 24 of 400+ teams)",
+    "Student Mentor at FCRIT and Vidyalankar: mentored 15+ students, evaluated 3 hackathons, External Examiner"
+  ],
+  "skills": {
+    "Product": "Product management, business analysis, stakeholder management, requirements, rollout",
+    "Data and building": "Python, SQL, Excel, Power BI, Next.js, Flask, Supabase/PostgreSQL, LLM integration",
+    "Finance": "Financial modelling (DCF), valuation, risk management"
+  }
+}

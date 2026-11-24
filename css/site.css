@@ -155,7 +155,7 @@ section{padding-block:72px;border-bottom:1px solid var(--rule)}
 .links{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;font-size:15px;align-items:center}
 .btn{font:600 14px var(--sans);background:none;border:1px solid var(--ink);color:var(--ink);padding:7px 14px;cursor:pointer;text-decoration:none;display:inline-block}
 .btn:hover{background:var(--ink);color:var(--paper)}
-.btn.primary{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+.btn.primary{background:var(--cobalt);border-color:var(--cobalt);color:var(--paper)}
 .btn.primary:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 footer{padding-block:24px 40px;font-size:13px;color:var(--faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--ink)}
 footer a{color:var(--faint)}
@@ -278,4 +278,79 @@ figure.diagram figcaption{font-size:13.5px;color:var(--faint);margin-top:10px;ma
   section{padding-block:24px;break-inside:avoid-page}
   body{font-size:12pt}
   a{text-decoration:none}
+}
+
+/* ---------- v2: hero with "at a glance", testimonials, resume ---------- */
+.hero .row{align-items:start}
+.hero-text{grid-column:1 / span 8}
+.hero .glance{grid-column:9 / span 4}
+.hero h1{font-size:clamp(38px,5.2vw,68px)}
+@media (max-width:980px){.hero .row{display:block}.hero .glance{margin-top:48px;max-width:520px}}
+.glance{border-top:2px solid var(--ink);padding-top:4px}
+.glance h2{font-size:13px;font-weight:700;letter-spacing:.02em;color:var(--faint);padding:10px 0 4px}
+.glance dl{margin:0}
+.glance dl div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:11px 0;border-bottom:1px solid var(--rule)}
+.glance dt{font-size:13px;color:var(--faint);font-weight:600;padding-top:1px}
+.glance dd{margin:0;font-size:15px;line-height:1.45}
+.glance dd small{display:block;color:var(--soft);font-size:13.5px}
+.glance .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.glance .cta a{font-size:14px}
+.live{display:inline-flex;align-items:center;gap:7px;font-weight:600}
+.live::before{content:"";width:8px;height:8px;background:#1f9d55;flex:none}
+
+.words{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:start}
+@media (max-width:860px){.words{grid-template-columns:1fr}}
+.words blockquote{margin:0}
+.words .big p{font-family:var(--serif);font-size:clamp(24px,2.8vw,32px);line-height:1.3;letter-spacing:-.01em}
+.words .big p::before{content:"“";color:var(--cobalt)}
+.words .big p::after{content:"”";color:var(--cobalt)}
+.words .small{border-top:1px solid var(--rule);padding-top:18px}
+.words .small+.small{margin-top:28px}
+.words .small p{font-family:var(--serif);font-size:19px;line-height:1.45}
+.words .small p::before{content:"“"}
+.words .small p::after{content:"”"}
+.words footer,.words .by{display:block;border:0;padding:0;margin-top:14px;font-size:14px;color:var(--soft);line-height:1.45}
+.words .by b{display:block;color:var(--ink);font-size:15px}
+.words .kind{display:block;font-size:12.5px;color:var(--faint);margin-top:2px}
+.words .scope{list-style:none;margin:12px 0 0;padding:0}
+.words .scope li{font-family:var(--serif);font-size:17px;line-height:1.45;padding:8px 0;border-top:1px solid var(--rule);color:var(--soft)}
+.words .scope li b{font-family:var(--sans);color:var(--ink);font-size:14.5px;display:block}
+.onreq{font-size:14px;color:var(--faint);margin-top:28px}
+
+/* resume page */
+.resume{max-width:860px;margin:0 auto;padding:40px 24px 64px}
+@media (max-width:560px){.resume{padding:28px 16px 48px}}
+.resume .tools-bar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:28px;font-size:14px}
+.resume header.rh{border-bottom:2px solid var(--ink);padding-bottom:14px}
+.resume h1{font-size:clamp(30px,5vw,40px);letter-spacing:-.03em}
+.resume .contact-line{margin-top:6px;font-size:14px;color:var(--soft);display:flex;gap:6px 14px;flex-wrap:wrap}
+.resume .contact-line a{color:var(--soft)}
+.resume .sum{margin-top:14px;font-family:var(--serif);font-size:17px;line-height:1.5}
+.resume h2{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cobalt);margin:26px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--rule)}
+.resume .job{margin-top:12px}
+.resume .job-h{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.resume .job-h b{font-size:16px}
+.resume .job-h span{font-size:13.5px;color:var(--soft);font-variant-numeric:tabular-nums}
+.resume .sub{font-size:14px;color:var(--soft)}
+.resume ul{margin:6px 0 0;padding-left:18px}
+.resume li{font-size:14.5px;line-height:1.5;margin-top:3px}
+.resume li strong{font-weight:700}
+.resume .two{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+@media (max-width:640px){.resume .two{grid-template-columns:1fr}}
+.resume .skills div{font-size:14.5px;line-height:1.5;margin-top:4px}
+@media print{
+  @page{size:A4;margin:9mm 11mm}
+  body{background:#fff;color:#000;font-size:9.5pt;line-height:1.35}
+  .resume{padding:0;max-width:none}
+  .resume .tools-bar{display:none}
+  .resume h1{font-size:20pt}
+  .resume header.rh{padding-bottom:8px}
+  .resume .sum{font-size:10pt;margin-top:6px;line-height:1.4}
+  .resume ul{margin-top:2px}
+  .resume li{font-size:9pt;margin-top:0;line-height:1.38}
+  .resume h2{margin:9px 0 3px;padding-bottom:2px;color:#1d36b0;font-size:9pt}
+  .resume .job{margin-top:5px;break-inside:avoid}
+  .resume .skills div{margin-top:1px}
+  .resume .job-h b{font-size:10.5pt}
+  .resume .job-h span,.resume .sub,.resume .contact-line,.resume .skills div{font-size:9.5pt}
 }
