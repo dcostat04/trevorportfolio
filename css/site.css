@@ -136,7 +136,7 @@ section{padding-block:72px;border-bottom:1px solid var(--rule)}
 @media (max-width:560px){.record .when{width:96px;white-space:normal}}
 
 /* about */
-.about-grid{display:block}
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:48px;align-items:start}
 .about-grid p{font-family:var(--serif);font-size:20px;line-height:1.5;max-width:58ch}
 .about-grid p+p{margin-top:16px}
 .about-grid figure{margin:4px 0 0}
