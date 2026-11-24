@@ -22,7 +22,7 @@
   var outage = document.getElementById('outage');
   var started = 0;
 
-  // Illustrative catalogue: not Icestasy's real product list or prices.
+  // Products are from Icestasy's range; customer, region and quantities are a sample. No prices shown.
   var lines = [
     { raw: '6 Belgian', qty: 6, options: ['Belgian Speculoos', 'Belgian Chocolate'] },
     { raw: '4 mango', qty: 4, item: 'Mango' },
