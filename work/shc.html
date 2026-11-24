@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHC Deal Engine · Trevor D'Costa</title>
+<meta name="description" content="A system I designed at SHC Growth Partners so one advisor could run 50 deals instead of 5: a compliance rules engine, investor matching and a seven-stage deal pipeline.">
+<meta property="og:title" content="How many deals can one advisor run?">
+<meta property="og:description" content="A case study by Trevor D'Costa from an investment banking internship at SHC Growth Partners.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#2340c9">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the case study</a>
+<div class="wrap">
+
+  <header class="top">
+    <a class="me" href="../">Trevor D'Costa</a>
+    <nav aria-label="Main">
+      <a href="../#work" aria-current="page">Work</a>
+      <a href="../#principles">How I work</a>
+      <a href="../#about">About</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </header>
+
+  <a class="crumb" href="../#work">← All work</a>
+
+  <div class="case-head" id="main">
+    <p class="eyebrow">Case study 02 · SHC Growth Partners</p>
+    <h1>How many deals can one advisor run?</h1>
+    <p class="dek">I spent a summer on the analyst side of deals and kept running into the same ceiling: the work that grows with every mandate was done by hand. So I designed a system to lift it.</p>
+    <dl class="facts-table">
+      <div><dt>Role</dt><dd>Summer Intern, Investment Banking</dd></div>
+      <div><dt>Timeline</dt><dd>April to June 2026</dd></div>
+      <div><dt>What I made</dt><dd>One working tool, one system design</dd></div>
+      <div><dt>Status</dt><dd>Design pitched to the firm; not deployed</dd></div>
+    </dl>
+  </div>
+
+  <section>
+    <div class="row">
+      <div class="side"><h2>The day job</h2></div>
+      <div class="main prose">
+        <p class="lead">Most of my summer was analyst work on live deals and pitches.</p>
+        <p>I built DCF and financial models, with comparable companies and precedent transactions, and ran scenario and sensitivity analysis on them. I managed virtual data rooms and coordinated stakeholders, and supported cross-border M&amp;A and equity and debt fundraising through market research and buyer identification.</p>
+        <p>That work taught me where an advisory firm's time actually goes. Valuation is skilled work and should stay with people. Matching each mandate to the right investors, and writing to each of them individually, grows with every new deal, and it was all done by hand.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="side"><h2>What I built<span>A tool that worked</span></h2></div>
+      <div class="main prose">
+        <h3>Personalised outreach through Zoho Mail</h3>
+        <p>A Chrome extension that sends individually personalised investor emails through Zoho Mail, with duplicate checks and pacing so nothing reads like a mass mailing. It was the first thing that made me ask the bigger question.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="side"><h2>What I designed<span>The bigger question</span></h2></div>
+      <div class="main">
+        <div class="prose">
+          <p class="lead">If outreach could be automated, how much of the rest of a mandate could be?</p>
+          <p>On my own time I designed a system with three parts. Each one takes a repeated judgement that an advisor makes by hand and turns it into something the system handles, so the advisor's time goes to the decisions that need a person.</p>
+        </div>
+        <figure class="diagram">
+          <div style="overflow-x:auto">
+          <svg viewBox="0 0 740 190" role="img" aria-labelledby="shc-t shc-d" style="min-width:600px">
+            <title id="shc-t">Three parts of the deal system</title>
+            <desc id="shc-d">A compliance rules engine screens each deal, an investor-matching algorithm proposes the right investors, and a seven-stage pipeline tracks every mandate. Together they were designed to let one advisor run 50 deals instead of 5.</desc>
+            <defs><marker id="sa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="dg-head key"/></marker></defs>
+            <rect class="dg-key" x="10" y="20" width="210" height="74"/>
+            <text class="dg-t" x="24" y="46">Compliance rules engine</text>
+            <text class="dg-s" x="24" y="66">routine checks become automatic</text>
+            <rect class="dg-key" x="265" y="20" width="210" height="74"/>
+            <text class="dg-t" x="279" y="46">Investor matching</text>
+            <text class="dg-s" x="279" y="66">the right investors for each deal</text>
+            <rect class="dg-key" x="520" y="20" width="210" height="74"/>
+            <text class="dg-t" x="534" y="46">Seven-stage pipeline</text>
+            <text class="dg-s" x="534" y="66">every mandate, one view</text>
+            <path class="dg-line key" d="M220 57H263" marker-end="url(#sa)"/>
+            <path class="dg-line key" d="M475 57H518" marker-end="url(#sa)"/>
+            <path class="dg-lane" d="M10 130H730"/>
+            <text class="dg-lab" x="10" y="160">DESIGN CAPACITY PER ADVISOR</text>
+            <text class="dg-s" x="300" y="160">today</text><text class="dg-t" x="340" y="160">5 deals</text>
+            <text class="dg-s" x="460" y="160">designed for</text><text class="dg-c" x="545" y="160" style="font-size:14px">50 deals</text>
+          </svg>
+          </div>
+          <figcaption>The three components and the target they were designed around.</figcaption>
+        </figure>
+        <div class="prose" style="margin-top:36px">
+          <h3>Why start with compliance</h3>
+          <p>In a regulated business, compliance checks are what the rest of the process waits on. Encoding the routine ones as rules means a deal only reaches a person when something is genuinely unusual, the same idea as Order Desk asking about "Belgian" instead of guessing.</p>
+          <h3>Outcome</h3>
+          <p>I presented the design to my manager before the internship ended, and it was well received by the firm.</p>
+          <p class="honest"><b>To be precise:</b> this was pitched, not deployed. "50 deals instead of 5" is the capacity the system was designed for, not a result I measured.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="side"><h2>Looking back</h2></div>
+      <div class="main prose">
+        <p>Finance taught me how deals are valued. Building for a deal team taught me something more useful for product work: the expensive part of a professional's day is rarely the hard part. It's the repeated part.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" style="padding-bottom:56px">
+    <nav class="next" aria-label="More case studies">
+      <a href="icestasy.html"><span>← Previous</span><b>Replacing a WhatsApp-run business</b></a>
+      <a href="barclays.html"><span>Next case study →</span><b>Storage alerts that people trust again</b></a>
+    </nav>
+  </section>
+
+  <footer><span>Trevor D'Costa · <a href="mailto:tardcosta4@gmail.com">tardcosta4@gmail.com</a></span><a href="#">Back to top</a></footer>
+</div>
+<script src="../js/site.js"></script>
+</body>
+</html>

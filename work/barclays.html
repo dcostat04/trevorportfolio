@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barclays Storage Alerting · Trevor D'Costa</title>
+<meta name="description" content="Two years in storage infrastructure at Barclays: alerting, anomaly detection and automated remediation that cut incident response time by 48% and downtime by 30%.">
+<meta property="og:title" content="Storage alerts that people trust again">
+<meta property="og:description" content="A case study by Trevor D'Costa from two years as a software engineer at Barclays.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#2340c9">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the case study</a>
+<div class="wrap">
+
+  <header class="top">
+    <a class="me" href="../">Trevor D'Costa</a>
+    <nav aria-label="Main">
+      <a href="../#work" aria-current="page">Work</a>
+      <a href="../#principles">How I work</a>
+      <a href="../#about">About</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </header>
+
+  <a class="crumb" href="../#work">← All work</a>
+
+  <div class="case-head" id="main">
+    <p class="eyebrow">Case study 03 · Barclays, Pune</p>
+    <h1>Storage alerts that people trust again</h1>
+    <p class="dek">Two years in a team where problems surface either early or expensively. The team relied on manual checks, and on alerts so noisy that people had learned to ignore them.</p>
+    <dl class="facts-table">
+      <div><dt>Role</dt><dd>Graduate Analyst (BA3), then Software Engineer (BA4)</dd></div>
+      <div><dt>Timeline</dt><dd>July 2023 to September 2025</dd></div>
+      <div><dt>Area</dt><dd>Storage infrastructure, SAN</dd></div>
+      <div><dt>Promotion</dt><dd>BA3 to BA4 within 20 months</dd></div>
+    </dl>
+  </div>
+
+  <section>
+    <div class="row">
+      <div class="side"><h2>In short</h2></div>
+      <div class="main">
+        <div class="tldr">
+          <div><b>−48%</b><span>incident response time, after rebuilding storage alerting</span></div>
+          <div><b>−30%</b><span>downtime, after adding observability and anomaly detection</span></div>
+          <div><b>30 hrs</b><span>of manual data work automated every week, with data accuracy up 38%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="side"><h2>The problem<span>Alerts nobody read</span></h2></div>
+      <div class="main prose">
+        <p class="lead">An alert that people ignore is worse than no alert, because everyone assumes someone is watching.</p>
+        <p>The storage estate generated plenty of signals, but the team had stopped trusting them. Real problems were often caught by manual checks. My job was technical, but the problem underneath it was about trust.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="side"><h2>What I did<span>In the order I did it</span></h2></div>
+      <div class="main">
+        <ol class="steps">
+          <li><div><b>Started small, on purpose</b><span>I built alerting for the three or four highest-impact storage arrays first, rather than the whole estate. A small set of alerts that were always right did more to win back trust than full coverage that was sometimes wrong.</span></div></li>
+          <li><div><b>Added observability</b><span>Then I added observability with automated anomaly detection, so the team saw problems forming instead of finding them after they hit.</span></div></li>
+          <li><div><b>Automated the repetitive fixes</b><span>As a BA4, I automated more than 60% of remediation workflows. Earlier, as a BA3, I had automated switch-port remediation for Brocade and Cisco.</span></div></li>
+          <li><div><b>Removed the weekly grind</b><span>I automated production storage data handling that had taken 30 hours of manual work every week, and data accuracy improved by 38%.</span></div></li>
+          <li><div><b>Fixed causes, not symptoms</b><span>I ran root-cause analysis on 150+ operational issues, with 90% resolution accuracy.</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="side"><h2>Leading<span>Beyond my own work</span></h2></div>
+      <div class="main prose">
+        <p>I led a team of four through four to five SAN storage data centre recovery exercises, each delivered ahead of schedule, and trained new joiners along the way. I also co-developed the Barclays CE Idea Hub portal with a team of seven, which drew 300+ idea submissions across GTIS India. Day to day, the work ran on ITSM and Agile delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="side"><h2>Results</h2></div>
+      <div class="main">
+        <div class="ledger-wrap">
+          <table class="ledger">
+            <thead><tr><th>What changed</th><th>Before</th><th>After</th></tr></thead>
+            <tbody>
+              <tr><td>Incident response time</td><td class="was nil">–</td><td class="is">−48%</td></tr>
+              <tr><td>Storage downtime</td><td class="was nil">–</td><td class="is">−30%</td></tr>
+              <tr><td>Remediation workflows automated</td><td class="was nil">–</td><td class="is">60%+</td></tr>
+              <tr><td>Manual data work per week</td><td class="was">30 hours</td><td class="is">automated</td></tr>
+              <tr><td>Data accuracy</td><td class="was nil">–</td><td class="is">+38%</td></tr>
+              <tr><td>Operational issues root-caused</td><td class="was nil">–</td><td class="is">150+, 90% accurate</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="side"><h2>Looking back</h2></div>
+      <div class="main prose">
+        <p class="lead">This is where I learned the habit I now use in product work: earn trust on a small surface, then expand.</p>
+        <p>It's the same reason Order Desk asks a salesperson about "Belgian" instead of guessing. A system people rely on has to be right before it is clever.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" style="padding-bottom:56px">
+    <nav class="next" aria-label="More case studies">
+      <a href="shc.html"><span>← Previous</span><b>How many deals can one advisor run?</b></a>
+      <a href="icestasy.html"><span>Back to the first →</span><b>Replacing a WhatsApp-run business</b></a>
+    </nav>
+  </section>
+
+  <footer><span>Trevor D'Costa · <a href="mailto:tardcosta4@gmail.com">tardcosta4@gmail.com</a></span><a href="#">Back to top</a></footer>
+</div>
+<script src="../js/site.js"></script>
+</body>
+</html>
