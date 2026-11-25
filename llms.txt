@@ -3,8 +3,8 @@
 > Product person in Mumbai. Engineering, finance and shipped products. Open to Product Manager / Associate PM roles in B2B software (commerce, supply chain, ordering) and fintech: internship, internship to full-time, or full-time. Mumbai or remote.
 
 ## Case studies
-- [Icestasy: replacing a WhatsApp-run business](https://dcostat04.github.io/trevorportfolio/work/icestasy.html): Product Management Intern, Jun–Nov 2026. Pitched and built an AI order desk (70–100 orders/day; order entry from 10–15 min to under 2), production planning linked to sales, and an HRMS. Manual processing time down 40%.
-- [SHC Growth Partners: how many deals can one advisor run?](https://dcostat04.github.io/trevorportfolio/work/shc.html): designed a compliance rules engine, investor matching and a seven-stage pipeline built to scale one advisor from 5 to 50 deals. Pitched, not deployed.
+- [Icestasy: replacing a WhatsApp-run business](https://dcostat04.github.io/trevorportfolio/work/icestasy.html): Product Management Intern, Jun–Nov 2026. Pitched and built an AI order desk (70–100 orders/day; order entry from 10–15 min to under 2), production planning linked to sales, and an HRMS.
+- [SHC Growth Partners: how many deals can one advisor run?](https://dcostat04.github.io/trevorportfolio/work/shc.html): designed a compliance rules engine, investor matching and a seven-stage pipeline, designed so one advisor could handle 50 deals instead of 5. Pitched, not deployed.
 - [Barclays: storage alerts people trust again](https://dcostat04.github.io/trevorportfolio/work/barclays.html): incident response time down 48%, downtime down 30%, 60%+ of remediation automated. Promoted to BA4 within 20 months.
 
 ## Background

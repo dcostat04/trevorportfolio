@@ -9,7 +9,7 @@
   "looking_for": "Product Manager or Associate PM roles in B2B software and fintech",
   "availability": "Immediately · internship, internship to full-time, or full-time",
   "work_mode": "Mumbai or remote",
-  "summary": "Management professional bringing a rare blend of software engineering, operational analytics and financial acumen. Most recently led end-to-end digital transformation at Icestasy, backed by 2+ years of engineering rigour at Barclays.",
+  "summary": "Product person with engineering and finance training. Built and rolled out three products at Icestasy, and spent two years on storage reliability at Barclays.",
   "experience": [
     {
       "title": "Product Management Intern",
@@ -19,7 +19,7 @@
       "end": "2026-11",
       "case_study": "work/icestasy.html",
       "bullets": [
-        "Spearheaded the digital transformation of business operations by developing an integrated platform for Sales, Production, HR and Finance, reducing manual processing time by **40%**",
+        "Built an integrated platform for Sales, Production, HR and Finance, replacing WhatsApp and spreadsheet-based processes",
         "Designed and launched an AI-powered order automation system converting WhatsApp orders into structured records, processing **70–100 orders/day** and cutting order entry from 10–15 minutes to **under 2**",
         "Re-engineered production, inventory and workforce processes with weekly requirement planning, live stock dashboards and an HRMS live for **18 employees**",
         "Led the project end to end independently, from business requirements and process design to testing, rollout, documentation and handover"
@@ -35,7 +35,7 @@
       "bullets": [
         "Built DCF, comparable companies and precedent transaction models with scenario and sensitivity analysis to support live deals and pitches",
         "Supported cross-border M&A and equity and debt fundraising through market research and buyer identification; managed virtual data rooms",
-        "Designed a compliance-driven rules engine, investor-matching algorithm and 7-stage deal pipeline built to scale one advisor from **5 to 50 deals (10x)**; pitched to the firm"
+        "Designed a compliance-driven rules engine, investor-matching algorithm and 7-stage deal pipeline designed so one advisor could handle **50 deals instead of 5**; pitched to the firm, not deployed"
       ]
     },
     {
@@ -46,7 +46,7 @@
       "end": "2025-09",
       "case_study": "work/barclays.html",
       "bullets": [
-        "Drove storage reliability by building alerting and anomaly-detection observability, reducing incident response time by **48%** and downtime by **30%**",
+        "Improved storage reliability by building alerting and anomaly-detection observability, reducing incident response time by **48%** and downtime by **30%**",
         "Automated **60%+** of remediation workflows; promoted to BA4 within **20 months**"
       ]
     },
