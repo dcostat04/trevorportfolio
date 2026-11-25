@@ -11,4 +11,6 @@ Everything in **Experience**, the **At a glance** panel and **resume.html** come
   `python3 tools/linkedin_sync.py path/to/export-folder`. It updates titles, companies, dates, education and
   certifications while keeping your resume bullets. Never commit the export itself.
 
+After editing `data/profile.json`, run `node tools/build-assets.js` to regenerate the downloadable resume PDF and the link-preview image (`og.png`), then commit both.
+
 Case studies in `work/` are written by hand on purpose.

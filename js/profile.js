@@ -37,7 +37,7 @@
       var first = g.roles[g.roles.length - 1], last = g.roles[0];
       var n = months(first.start, last.end), y = Math.floor(n / 12), m = n % 12;
       var yrs = (y ? y + (y > 1 ? ' yrs' : ' yr') : '') + (y && m ? ' ' : '') + (m ? m + (m > 1 ? ' mos' : ' mo') : '');
-      return '<span style="display:block;margin-bottom:6px">' + esc(g.company.replace(/ Pvt\. Ltd\.| Private Limited/, '')) + '<small>' + esc(last.title) + ' · ' + yrs + '</small></span>';
+      return '<span style="display:block;margin-bottom:6px">' + esc(g.company.replace(/ Pvt\. Ltd\.| Private Limited/, '')) + '<small>' + esc(g.roles.length > 1 ? first.title.replace(/ \(.*\)/, '') + ' → ' + last.title.replace(/ \(.*\)/, '') : last.title) + ' · ' + yrs + '</small></span>';
     }).join('');
     var ed = (d.education || [])[0];
     el.innerHTML =
