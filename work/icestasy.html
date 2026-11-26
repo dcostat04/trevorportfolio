@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
-<link rel="stylesheet" href="../css/site.css?v=5">
+<link rel="stylesheet" href="../css/site.css?v=7">
 <script src="../js/ui.js?v=5"></script>
 </head>
 <body>
@@ -154,29 +154,6 @@
           <figcaption>Blue marks the core path from sales to production. Amber marks the safeguards: places where the system hands control back to a person, or to simpler logic.</figcaption>
         </figure>
 
-        <div class="prose" style="margin-top:48px">
-          <h3>Try it</h3>
-          <p>A working walkthrough of the Order Desk flow. Order Desk runs in production on real orders. The products here are from Icestasy's range; the message, customer and region are a sample, and real prices and customers stay private.</p>
-        </div>
-        <div class="demo" id="demo">
-          <div class="demo-bar"><b>Order Desk walkthrough</b>
-            <label><input type="checkbox" id="outage"> Simulate an AI outage</label></div>
-          <div class="demo-body">
-            <div class="demo-in">
-              <p class="lab">Incoming WhatsApp message</p>
-              <div class="wa">Hi, order for tomorrow pls
-6 Belgian
-4 mango
-3 vanilla
-Thanks!<small>9:42 am</small></div>
-              <button type="button" class="btn primary" id="parse">Parse message</button>
-            </div>
-            <div class="demo-out" aria-live="polite">
-              <p class="demo-empty">Press <b>Parse message</b> to see what Order Desk does with it.</p>
-            </div>
-          </div>
-          <div class="demo-log" aria-live="polite">Before Order Desk, a salesperson retyped this by hand.</div>
-        </div>
       </div>
     </div>
   </section>
