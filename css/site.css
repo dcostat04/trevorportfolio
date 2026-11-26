@@ -467,7 +467,6 @@ section.in .side h2::before{width:48px}
 .about-grid figure{position:relative}
 .about-grid img{transition:filter .4s,transform .4s}
 .about-grid figure:hover img{filter:none;transform:rotate(-1.5deg)}
-.about-grid figure::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:1.5px solid var(--amber);z-index:-1}
 .about-grid{isolation:isolate}
 .tools div{border-top:3px solid var(--cobalt);padding-top:14px;margin-top:-27px}
 .tools div:nth-child(2){border-top-color:var(--amber)}
