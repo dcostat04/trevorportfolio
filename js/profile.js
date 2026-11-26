@@ -41,6 +41,7 @@
     }).join('');
     var ed = (d.education || [])[0];
     el.innerHTML =
+      '<div class="face"><img src="' + base + 'images/trevor-avatar.jpg" alt="Trevor D\'Costa" width="112" height="112"><div><b>Trevor D\'Costa</b><span>Engineering, finance and product. Based in Mumbai.</span></div></div>' +
       '<h2>At a glance</h2><dl>' +
       '<div><dt>Status</dt><dd><span class="live">Available ' + esc(d.availability.split('·')[0].trim().toLowerCase()) + '</span><small>' + esc((d.availability.split('·')[1] || '').trim()) + '</small></dd></div>' +
       '<div><dt>Looking for</dt><dd>' + esc(d.looking_for) + '<small>' + esc(d.work_mode) + '</small></dd></div>' +
